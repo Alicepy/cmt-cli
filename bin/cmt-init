@@ -28,18 +28,6 @@ program
   .option('-c, --clone', 'use git clone')
 
 /**
- * template-list.
- */
-program
-.command('list')
-.description('cmt项目模板')
-.action(() => {
-    console.log(`
-        template-c   cmt脚手架测试模板
-    `)
-})
-
-/**
  * Help.
  */
 

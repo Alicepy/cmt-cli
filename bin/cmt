@@ -7,4 +7,16 @@ program
   .usage('<command> [options]')
   .command('init', 'generate a new project from a template')
 
+/**
+ * template-list.
+ */
+program
+  .command('list')
+  .description('cmt项目模板')
+  .action(() => {
+      console.log(`
+          template-c   cmt脚手架测试模板
+      `)
+  })
+
 program.parse(process.argv)
