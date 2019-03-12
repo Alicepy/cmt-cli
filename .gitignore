@@ -1,5 +1,10 @@
-
 node_modules
 .DS_Store
-docs/_book
-test/
+design
+*.log
+packages/test
+dist
+temp
+.vuerc
+.version
+.versions
