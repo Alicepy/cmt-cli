@@ -4,6 +4,7 @@
     "cmt-init": "bin/cmt-init"
   },
   "bundleDependencies": false,
+  "homepage": "https://github.com/Alicepy/cmt-cli#readme",
   "dependencies": {
     "async": "^2.4.0",
     "chalk": "^2.1.0",
@@ -44,9 +45,12 @@
     "spa"
   ],
   "license": "MIT",
-  "name": "tpl-vue",
+  "name": "cmt-cli",
   "preferGlobal": true,
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alicepy/cmt-cli.git"
+  },
   "scripts": {
     "e2e": "rimraf test/e2e/mock-template-build && mocha test/e2e/test.js --slow 1000",
     "lint": "eslint test/e2e/test*.js lib bin/* --env mocha",
