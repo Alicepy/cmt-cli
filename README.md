@@ -1,70 +1,18 @@
-# vue-cli [![Build Status](https://img.shields.io/circleci/project/vuejs/vue-cli/master.svg)](https://circleci.com/gh/vuejs/vue-cli) [![npm package](https://img.shields.io/npm/v/vue-cli.svg)](https://www.npmjs.com/package/vue-cli)
+#cmt-cli
 
-A simple CLI for scaffolding Vue.js projects.
+A simple CLI for scaffolding Angular.js projects.
 
 ### Installation
 
 Prerequisites: [Node.js](https://nodejs.org/en/) (>=6.x, 8.x preferred), npm version 3+ and [Git](https://git-scm.com/).
 
-``` bash
-$ npm install -g vue-cli
-```
+$ npm install -g cmt-cli
+$ cmt init <template-name> <project-name>
 
-### Usage
+cmt init username/repo my-project
 
-``` bash
-$ vue init <template-name> <project-name>
-```
-
-Example:
-
-``` bash
-$ vue init webpack my-project
-```
-
-The above command pulls the template from [vuejs-templates/webpack](https://github.com/vuejs-templates/webpack), prompts for some information, and generates the project at `./my-project/`.
-
-### vue build
-
-Use vue-cli as a zero-configuration development tool for your Vue apps and component, check out the [docs](/docs/build.md).
-
-### Official Templates
-
-The purpose of official Vue project templates are to provide opinionated, battery-included development tooling setups so that users can get started with actual app code as fast as possible. However, these templates are un-opinionated in terms of how you structure your app code and what libraries you use in addition to Vue.js.
-
-All official project templates are repos in the [vuejs-templates organization](https://github.com/vuejs-templates). When a new template is added to the organization, you will be able to run `vue init <template-name> <project-name>` to use that template. You can also run `vue list` to see all available official templates.
-
-Current available templates include:
-
-- [webpack](https://github.com/vuejs-templates/webpack) - A full-featured Webpack + vue-loader setup with hot reload, linting, testing & css extraction.
-
-- [webpack-simple](https://github.com/vuejs-templates/webpack-simple) - A simple Webpack + vue-loader setup for quick prototyping.
-
-- [browserify](https://github.com/vuejs-templates/browserify) - A full-featured Browserify + vueify setup with hot-reload, linting & unit testing.
-
-- [browserify-simple](https://github.com/vuejs-templates/browserify-simple) - A simple Browserify + vueify setup for quick prototyping.
-
-- [pwa](https://github.com/vuejs-templates/pwa) - PWA template for vue-cli based on the webpack template
-
-- [simple](https://github.com/vuejs-templates/simple) - The simplest possible Vue setup in a single HTML file
-
-### Custom Templates
-
-It's unlikely to make everyone happy with the official templates. You can simply fork an official template and then use it via `vue-cli` with:
-
-``` bash
-vue init username/repo my-project
-```
-
-Where `username/repo` is the GitHub repo shorthand for your fork.
-
-The shorthand repo notation is passed to [download-git-repo](https://github.com/flipxfx/download-git-repo) so you can also use things like `bitbucket:username/repo` for a Bitbucket repo and `username/repo#branch` for tags or branches.
-
-If you would like to download from a private repository use the `--clone` flag and the cli will use `git clone` so your SSH keys are used.
 
 ### Local Templates
-
-Instead of a GitHub repo, you can also use a template on your local file system:
 
 ``` bash
 vue init ~/fs/path/to-custom-template my-project
@@ -261,26 +209,9 @@ Arguments:
   ```
 
 ### Installing a specific template version
-
-`vue-cli` uses the tool [`download-git-repo`](https://github.com/flipxfx/download-git-repo) to download the official templates used. The `download-git-repo` tool allows you to indicate a specific branch for a given repository by providing the desired branch name after a pound sign (`#`).
-
-The format needed for a specific official template is:
-
 ```
 vue init '<template-name>#<branch-name>' <project-name>
 ```
+## Thanks
+To  [vue-cli](https://github.com/vuejs/vue-cli) for the head start.
 
-Example:
-
-Installing the [`1.0` branch](https://github.com/vuejs-templates/webpack-simple/tree/1.0) of the webpack-simple vue template:
-
-```
-vue init 'webpack-simple#1.0' mynewproject
-```
-
-_Note_: The surrounding quotes are necessary on zsh shells because of the special meaning of the `#` character.
-
-
-### License
-
-[MIT](http://opensource.org/licenses/MIT)
